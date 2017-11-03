@@ -24,11 +24,11 @@ class JRTableViewProxy: NSObject,UITableViewDelegate,UITableViewDataSource {
     var shopcartProxyDeleteBlock:((IndexPath)->())?
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return shopcartListArray.count
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shopcartListArray[section].list!.count
+        return dataSource[section].list!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,7 +36,7 @@ class JRTableViewProxy: NSObject,UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: ShopcartViewCellID, for: indexPath) as! ShopcartViewCell
         cell.selectionStyle = .none
         
-        let brandModel = shopcartListArray[indexPath.section]
+        let brandModel = dataSource[indexPath.section]
         
         if brandModel.list!.count > indexPath.row {
             
@@ -62,8 +62,8 @@ class JRTableViewProxy: NSObject,UITableViewDelegate,UITableViewDataSource {
         
         let shopcartHeaderView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ShopcartHeaderViewID) as! ShopcartHeaderView
                 
-        if shopcartListArray.count > section {
-            let barndModel = shopcartListArray[section]
+        if dataSource.count > section {
+            let barndModel = dataSource[section]
             shopcartHeaderView.configureShopcartHeaderViewWithBrandName(barndName: barndModel.brandName, brandSelect: barndModel.isSelected)
         }
         

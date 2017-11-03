@@ -35,10 +35,9 @@ import YYModel
     @objc optional func shopcartDidSelected(product_id:Int)
 }
 
-var shopcartListArray = [ShopcartBrandModel]()
-
 class JRShopcartFormat: NSObject {
 
+    var shopcartListArray = [ShopcartBrandModel]()
     var delegate:JRShopcartFormatDelegate?
     
     func requestShopcartProductList(dataArray:Array<Any>) {
@@ -137,7 +136,13 @@ class JRShopcartFormat: NSObject {
         var emptyArray = [ShopcartBrandModel]()
         
         for brandModel in shopcartListArray {
-            (brandModel.list as! NSMutableArray).removeObjects(in: selectedArray)
+            for productModel in selectedArray {
+                
+                if brandModel.list!.contains(productModel) {
+                    let index = brandModel.list?.index(of: productModel)
+                    brandModel.list?.remove(at: index!)
+                }
+            }
             
             if brandModel.list!.count == 0 {
                 emptyArray.append(brandModel)
@@ -145,7 +150,12 @@ class JRShopcartFormat: NSObject {
         }
         
         if emptyArray.count > 0 {
-            (shopcartListArray as! NSMutableArray).removeObjects(in: emptyArray)
+            for emptyModel in emptyArray {
+                if shopcartListArray.contains(emptyModel) {
+                    let index = shopcartListArray.index(of: emptyModel)
+                    shopcartListArray.remove(at: index!)
+                }
+            }
         }
         
         delegate?.shopcartFormatAccount(totalPrice: accountTotalPrice(), totalCount: accountTotalCount(), isAllSelected: isAllSelected())

@@ -19,6 +19,7 @@ class JRShopcartController: UIViewController,JRShopcartFormatDelegate {
         bottomView.configureShopcartBottomViewWithTotalPrice(totalPrice: totalPrice,
                                                              totalCount: totalCount,
                                                              isAllselected: isAllSelected)
+        shopcartTableViewProxy.dataSource = shopcartFormat.shopcartListArray
         tableView.reloadData()
     }
     
