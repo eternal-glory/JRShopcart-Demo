@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6705247E7517C28B485511CA /* Pods_Swift_Shopcart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8097EE0BE30EACFEB3338F6 /* Pods_Swift_Shopcart.framework */; };
+		A30622911FAC37E800491DBB /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306227B1FAC37E800491DBB /* IQNSArray+Sort.swift */; };
+		A30622921FAC37E800491DBB /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306227C1FAC37E800491DBB /* IQUIScrollView+Additions.swift */; };
+		A30622931FAC37E800491DBB /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306227D1FAC37E800491DBB /* IQUITextFieldView+Additions.swift */; };
+		A30622941FAC37E800491DBB /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306227E1FAC37E800491DBB /* IQUIView+Hierarchy.swift */; };
+		A30622951FAC37E800491DBB /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306227F1FAC37E800491DBB /* IQUIViewController+Additions.swift */; };
+		A30622961FAC37E800491DBB /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622801FAC37E800491DBB /* IQUIWindow+Hierarchy.swift */; };
+		A30622971FAC37E800491DBB /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622821FAC37E800491DBB /* IQKeyboardManagerConstants.swift */; };
+		A30622981FAC37E800491DBB /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622831FAC37E800491DBB /* IQKeyboardManagerConstantsInternal.swift */; };
+		A30622991FAC37E800491DBB /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622841FAC37E800491DBB /* IQKeyboardManager.swift */; };
+		A306229A1FAC37E800491DBB /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622861FAC37E800491DBB /* IQKeyboardReturnKeyHandler.swift */; };
+		A306229B1FAC37E800491DBB /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30622881FAC37E800491DBB /* IQTextView.swift */; };
+		A306229C1FAC37E800491DBB /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306228A1FAC37E800491DBB /* IQBarButtonItem.swift */; };
+		A306229D1FAC37E800491DBB /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306228B1FAC37E800491DBB /* IQPreviousNextView.swift */; };
+		A306229E1FAC37E800491DBB /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306228C1FAC37E800491DBB /* IQTitleBarButtonItem.swift */; };
+		A306229F1FAC37E800491DBB /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306228D1FAC37E800491DBB /* IQToolbar.swift */; };
+		A30622A01FAC37E800491DBB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306228E1FAC37E800491DBB /* IQUIView+IQKeyboardToolbar.swift */; };
+		A30622A11FAC37E800491DBB /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A30622901FAC37E800491DBB /* IQKeyboardManager.bundle */; };
+		A348A7A31FA81DC4002CA00D /* shopcart.plist in Resources */ = {isa = PBXBuildFile; fileRef = A348A7A21FA81DC4002CA00D /* shopcart.plist */; };
+		A348A7A61FA828D8002CA00D /* ShopcartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A348A7A51FA828D8002CA00D /* ShopcartHeaderView.swift */; };
+		A37D82CE1FA96C8B004B6A96 /* ShopcartBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37D82CD1FA96C8B004B6A96 /* ShopcartBottomView.swift */; };
+		A3B81E371FA70BBD009CC4B4 /* JRCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B81E361FA70BBD009CC4B4 /* JRCountView.swift */; };
+		A3BAB0781FA3148500AC2EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB0771FA3148500AC2EB2 /* AppDelegate.swift */; };
+		A3BAB07A1FA3148500AC2EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB0791FA3148500AC2EB2 /* ViewController.swift */; };
+		A3BAB07D1FA3148500AC2EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BAB07B1FA3148500AC2EB2 /* Main.storyboard */; };
+		A3BAB07F1FA3148500AC2EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BAB07E1FA3148500AC2EB2 /* Assets.xcassets */; };
+		A3BAB0821FA3148500AC2EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BAB0801FA3148500AC2EB2 /* LaunchScreen.storyboard */; };
+		A3BAB0911FA31C5900AC2EB2 /* JRShopcartFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB08F1FA31C5900AC2EB2 /* JRShopcartFormat.swift */; };
+		A3BAB0921FA31C5900AC2EB2 /* JRTableViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB0901FA31C5900AC2EB2 /* JRTableViewProxy.swift */; };
+		A3BAB0971FA31CA500AC2EB2 /* JRShopcartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB0961FA31CA500AC2EB2 /* JRShopcartController.swift */; };
+		A3BAB0991FA31CC300AC2EB2 /* ShopcartBrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB0981FA31CC300AC2EB2 /* ShopcartBrandModel.swift */; };
+		A3BAB09B1FA31CD900AC2EB2 /* GoodsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB09A1FA31CD900AC2EB2 /* GoodsListModel.swift */; };
+		A3BAB09E1FA31D0600AC2EB2 /* ShopcartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAB09C1FA31D0600AC2EB2 /* ShopcartViewCell.swift */; };
+		A3BAB09F1FA31D0600AC2EB2 /* ShopcartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3BAB09D1FA31D0600AC2EB2 /* ShopcartViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56997E4D865E655F789DC0C9 /* Pods-Swift-Shopcart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Shopcart.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-Shopcart/Pods-Swift-Shopcart.release.xcconfig"; sourceTree = "<group>"; };
+		9ED5B975B11750E79B2A9BAE /* Pods-Swift-Shopcart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Shopcart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-Shopcart/Pods-Swift-Shopcart.debug.xcconfig"; sourceTree = "<group>"; };
+		A306227B1FAC37E800491DBB /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		A306227C1FAC37E800491DBB /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		A306227D1FAC37E800491DBB /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		A306227E1FAC37E800491DBB /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		A306227F1FAC37E800491DBB /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		A30622801FAC37E800491DBB /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		A30622821FAC37E800491DBB /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		A30622831FAC37E800491DBB /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		A30622841FAC37E800491DBB /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		A30622851FAC37E800491DBB /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		A30622861FAC37E800491DBB /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		A30622881FAC37E800491DBB /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		A306228A1FAC37E800491DBB /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		A306228B1FAC37E800491DBB /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		A306228C1FAC37E800491DBB /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		A306228D1FAC37E800491DBB /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		A306228E1FAC37E800491DBB /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		A30622901FAC37E800491DBB /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		A348A7A21FA81DC4002CA00D /* shopcart.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shopcart.plist; sourceTree = "<group>"; };
+		A348A7A51FA828D8002CA00D /* ShopcartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopcartHeaderView.swift; sourceTree = "<group>"; };
+		A37D82CD1FA96C8B004B6A96 /* ShopcartBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopcartBottomView.swift; sourceTree = "<group>"; };
+		A3B81E361FA70BBD009CC4B4 /* JRCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRCountView.swift; sourceTree = "<group>"; };
+		A3BAB0741FA3148500AC2EB2 /* Swift-Shopcart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Shopcart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BAB0771FA3148500AC2EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3BAB0791FA3148500AC2EB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3BAB07C1FA3148500AC2EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3BAB07E1FA3148500AC2EB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3BAB0811FA3148500AC2EB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3BAB0831FA3148500AC2EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3BAB08F1FA31C5900AC2EB2 /* JRShopcartFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRShopcartFormat.swift; sourceTree = "<group>"; };
+		A3BAB0901FA31C5900AC2EB2 /* JRTableViewProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRTableViewProxy.swift; sourceTree = "<group>"; };
+		A3BAB0961FA31CA500AC2EB2 /* JRShopcartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRShopcartController.swift; sourceTree = "<group>"; };
+		A3BAB0981FA31CC300AC2EB2 /* ShopcartBrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopcartBrandModel.swift; sourceTree = "<group>"; };
+		A3BAB09A1FA31CD900AC2EB2 /* GoodsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListModel.swift; sourceTree = "<group>"; };
+		A3BAB09C1FA31D0600AC2EB2 /* ShopcartViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopcartViewCell.swift; sourceTree = "<group>"; };
+		A3BAB09D1FA31D0600AC2EB2 /* ShopcartViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopcartViewCell.xib; sourceTree = "<group>"; };
+		E8097EE0BE30EACFEB3338F6 /* Pods_Swift_Shopcart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Shopcart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3BAB0711FA3148500AC2EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6705247E7517C28B485511CA /* Pods_Swift_Shopcart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58C24E45FC0DD2E683213FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8097EE0BE30EACFEB3338F6 /* Pods_Swift_Shopcart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A30622791FAC37E800491DBB /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A306227A1FAC37E800491DBB /* Categories */,
+				A30622811FAC37E800491DBB /* Constants */,
+				A30622841FAC37E800491DBB /* IQKeyboardManager.swift */,
+				A30622851FAC37E800491DBB /* IQKeyboardManagerSwift.h */,
+				A30622861FAC37E800491DBB /* IQKeyboardReturnKeyHandler.swift */,
+				A30622871FAC37E800491DBB /* IQTextView */,
+				A30622891FAC37E800491DBB /* IQToolbar */,
+				A306228F1FAC37E800491DBB /* Resources */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		A306227A1FAC37E800491DBB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A306227B1FAC37E800491DBB /* IQNSArray+Sort.swift */,
+				A306227C1FAC37E800491DBB /* IQUIScrollView+Additions.swift */,
+				A306227D1FAC37E800491DBB /* IQUITextFieldView+Additions.swift */,
+				A306227E1FAC37E800491DBB /* IQUIView+Hierarchy.swift */,
+				A306227F1FAC37E800491DBB /* IQUIViewController+Additions.swift */,
+				A30622801FAC37E800491DBB /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A30622811FAC37E800491DBB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A30622821FAC37E800491DBB /* IQKeyboardManagerConstants.swift */,
+				A30622831FAC37E800491DBB /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A30622871FAC37E800491DBB /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A30622881FAC37E800491DBB /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		A30622891FAC37E800491DBB /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				A306228A1FAC37E800491DBB /* IQBarButtonItem.swift */,
+				A306228B1FAC37E800491DBB /* IQPreviousNextView.swift */,
+				A306228C1FAC37E800491DBB /* IQTitleBarButtonItem.swift */,
+				A306228D1FAC37E800491DBB /* IQToolbar.swift */,
+				A306228E1FAC37E800491DBB /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		A306228F1FAC37E800491DBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A30622901FAC37E800491DBB /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A348A7A41FA828C0002CA00D /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				A348A7A51FA828D8002CA00D /* ShopcartHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		A37D82CC1FA96C6D004B6A96 /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				A37D82CD1FA96C8B004B6A96 /* ShopcartBottomView.swift */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
+		A3B81E351FA70BA6009CC4B4 /* CountView */ = {
+			isa = PBXGroup;
+			children = (
+				A3B81E361FA70BBD009CC4B4 /* JRCountView.swift */,
+			);
+			path = CountView;
+			sourceTree = "<group>";
+		};
+		A3BAB06B1FA3148500AC2EB2 = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0761FA3148500AC2EB2 /* Swift-Shopcart */,
+				A3BAB0751FA3148500AC2EB2 /* Products */,
+				BF6B05330AE37847F2C66E18 /* Pods */,
+				58C24E45FC0DD2E683213FB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3BAB0751FA3148500AC2EB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0741FA3148500AC2EB2 /* Swift-Shopcart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3BAB0761FA3148500AC2EB2 /* Swift-Shopcart */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0771FA3148500AC2EB2 /* AppDelegate.swift */,
+				A3BAB0791FA3148500AC2EB2 /* ViewController.swift */,
+				A30622791FAC37E800491DBB /* IQKeyboardManagerSwift */,
+				A3BAB0891FA314AA00AC2EB2 /* ShopcartClasses */,
+				A3BAB07B1FA3148500AC2EB2 /* Main.storyboard */,
+				A348A7A21FA81DC4002CA00D /* shopcart.plist */,
+				A3BAB07E1FA3148500AC2EB2 /* Assets.xcassets */,
+				A3BAB0801FA3148500AC2EB2 /* LaunchScreen.storyboard */,
+				A3BAB0831FA3148500AC2EB2 /* Info.plist */,
+			);
+			path = "Swift-Shopcart";
+			sourceTree = "<group>";
+		};
+		A3BAB0891FA314AA00AC2EB2 /* ShopcartClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0951FA31C7C00AC2EB2 /* Controller */,
+				A3BAB0941FA31C6D00AC2EB2 /* View */,
+				A3BAB0931FA31C6200AC2EB2 /* Model */,
+				A3BAB08E1FA31C4500AC2EB2 /* Proxy */,
+			);
+			path = ShopcartClasses;
+			sourceTree = "<group>";
+		};
+		A3BAB08E1FA31C4500AC2EB2 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB08F1FA31C5900AC2EB2 /* JRShopcartFormat.swift */,
+				A3BAB0901FA31C5900AC2EB2 /* JRTableViewProxy.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		A3BAB0931FA31C6200AC2EB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0981FA31CC300AC2EB2 /* ShopcartBrandModel.swift */,
+				A3BAB09A1FA31CD900AC2EB2 /* GoodsListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3BAB0941FA31C6D00AC2EB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB09C1FA31D0600AC2EB2 /* ShopcartViewCell.swift */,
+				A3BAB09D1FA31D0600AC2EB2 /* ShopcartViewCell.xib */,
+				A37D82CC1FA96C6D004B6A96 /* BottomView */,
+				A348A7A41FA828C0002CA00D /* HeaderView */,
+				A3B81E351FA70BA6009CC4B4 /* CountView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3BAB0951FA31C7C00AC2EB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAB0961FA31CA500AC2EB2 /* JRShopcartController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF6B05330AE37847F2C66E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5B975B11750E79B2A9BAE /* Pods-Swift-Shopcart.debug.xcconfig */,
+				56997E4D865E655F789DC0C9 /* Pods-Swift-Shopcart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3BAB0731FA3148500AC2EB2 /* Swift-Shopcart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3BAB0861FA3148500AC2EB2 /* Build configuration list for PBXNativeTarget "Swift-Shopcart" */;
+			buildPhases = (
+				6414F05867F711575F9DD0EA /* [CP] Check Pods Manifest.lock */,
+				A3BAB0701FA3148500AC2EB2 /* Sources */,
+				A3BAB0711FA3148500AC2EB2 /* Frameworks */,
+				A3BAB0721FA3148500AC2EB2 /* Resources */,
+				534DB5B1D9CDFE6C6DDB4121 /* [CP] Embed Pods Frameworks */,
+				BA4A35688CC516530257D7E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-Shopcart";
+			productName = "Swift-Shopcart";
+			productReference = A3BAB0741FA3148500AC2EB2 /* Swift-Shopcart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3BAB06C1FA3148500AC2EB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Johnson Rey";
+				TargetAttributes = {
+					A3BAB0731FA3148500AC2EB2 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A3BAB06F1FA3148500AC2EB2 /* Build configuration list for PBXProject "Swift-Shopcart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3BAB06B1FA3148500AC2EB2;
+			productRefGroup = A3BAB0751FA3148500AC2EB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3BAB0731FA3148500AC2EB2 /* Swift-Shopcart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3BAB0721FA3148500AC2EB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BAB09F1FA31D0600AC2EB2 /* ShopcartViewCell.xib in Resources */,
+				A3BAB0821FA3148500AC2EB2 /* LaunchScreen.storyboard in Resources */,
+				A30622A11FAC37E800491DBB /* IQKeyboardManager.bundle in Resources */,
+				A348A7A31FA81DC4002CA00D /* shopcart.plist in Resources */,
+				A3BAB07F1FA3148500AC2EB2 /* Assets.xcassets in Resources */,
+				A3BAB07D1FA3148500AC2EB2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		534DB5B1D9CDFE6C6DDB4121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Shopcart/Pods-Swift-Shopcart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Shopcart/Pods-Swift-Shopcart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6414F05867F711575F9DD0EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift-Shopcart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4A35688CC516530257D7E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift-Shopcart/Pods-Swift-Shopcart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3BAB0701FA3148500AC2EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BAB09E1FA31D0600AC2EB2 /* ShopcartViewCell.swift in Sources */,
+				A3BAB0911FA31C5900AC2EB2 /* JRShopcartFormat.swift in Sources */,
+				A306229A1FAC37E800491DBB /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				A37D82CE1FA96C8B004B6A96 /* ShopcartBottomView.swift in Sources */,
+				A3BAB07A1FA3148500AC2EB2 /* ViewController.swift in Sources */,
+				A348A7A61FA828D8002CA00D /* ShopcartHeaderView.swift in Sources */,
+				A3BAB0921FA31C5900AC2EB2 /* JRTableViewProxy.swift in Sources */,
+				A306229C1FAC37E800491DBB /* IQBarButtonItem.swift in Sources */,
+				A30622951FAC37E800491DBB /* IQUIViewController+Additions.swift in Sources */,
+				A30622A01FAC37E800491DBB /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				A3BAB0991FA31CC300AC2EB2 /* ShopcartBrandModel.swift in Sources */,
+				A3BAB0781FA3148500AC2EB2 /* AppDelegate.swift in Sources */,
+				A306229F1FAC37E800491DBB /* IQToolbar.swift in Sources */,
+				A30622911FAC37E800491DBB /* IQNSArray+Sort.swift in Sources */,
+				A30622971FAC37E800491DBB /* IQKeyboardManagerConstants.swift in Sources */,
+				A3B81E371FA70BBD009CC4B4 /* JRCountView.swift in Sources */,
+				A3BAB09B1FA31CD900AC2EB2 /* GoodsListModel.swift in Sources */,
+				A30622981FAC37E800491DBB /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				A30622921FAC37E800491DBB /* IQUIScrollView+Additions.swift in Sources */,
+				A30622961FAC37E800491DBB /* IQUIWindow+Hierarchy.swift in Sources */,
+				A30622991FAC37E800491DBB /* IQKeyboardManager.swift in Sources */,
+				A30622931FAC37E800491DBB /* IQUITextFieldView+Additions.swift in Sources */,
+				A306229D1FAC37E800491DBB /* IQPreviousNextView.swift in Sources */,
+				A306229B1FAC37E800491DBB /* IQTextView.swift in Sources */,
+				A30622941FAC37E800491DBB /* IQUIView+Hierarchy.swift in Sources */,
+				A3BAB0971FA31CA500AC2EB2 /* JRShopcartController.swift in Sources */,
+				A306229E1FAC37E800491DBB /* IQTitleBarButtonItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3BAB07B1FA3148500AC2EB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3BAB07C1FA3148500AC2EB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3BAB0801FA3148500AC2EB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3BAB0811FA3148500AC2EB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3BAB0841FA3148500AC2EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3BAB0851FA3148500AC2EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3BAB0871FA3148500AC2EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED5B975B11750E79B2A9BAE /* Pods-Swift-Shopcart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Swift-Shopcart/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiangou.Swift-Shopcart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3BAB0881FA3148500AC2EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56997E4D865E655F789DC0C9 /* Pods-Swift-Shopcart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Swift-Shopcart/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiangou.Swift-Shopcart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3BAB06F1FA3148500AC2EB2 /* Build configuration list for PBXProject "Swift-Shopcart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BAB0841FA3148500AC2EB2 /* Debug */,
+				A3BAB0851FA3148500AC2EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3BAB0861FA3148500AC2EB2 /* Build configuration list for PBXNativeTarget "Swift-Shopcart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BAB0871FA3148500AC2EB2 /* Debug */,
+				A3BAB0881FA3148500AC2EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3BAB06C1FA3148500AC2EB2 /* Project object */;
+}

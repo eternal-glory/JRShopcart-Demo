@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="og6-XW-Tns">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Vp6-K7-8i9">
+            <objects>
+                <navigationController id="og6-XW-Tns" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lDZ-MY-e1O">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i3w-ul-Hzh" kind="relationship" relationship="rootViewController" id="Z6e-2k-bzz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUa-DR-g5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-974" y="104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RAx-rx-xgE">
+            <objects>
+                <viewController id="i3w-ul-Hzh" customClass="ViewController" customModule="Swift_Shopcart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7on-UK-yWd"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDK-bI-bLd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ywO-Ke-Yre">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWQ-Ki-bNn">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="购物车"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="i3w-ul-Hzh" eventType="touchUpInside" id="NUh-Zr-AFC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GWQ-Ki-bNn" firstAttribute="centerY" secondItem="ywO-Ke-Yre" secondAttribute="centerY" id="9Nn-4Q-JoO"/>
+                            <constraint firstItem="GWQ-Ki-bNn" firstAttribute="centerX" secondItem="ywO-Ke-Yre" secondAttribute="centerX" id="f4X-JL-1Un"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CrA-hb-hHf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luT-nD-9Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="111"/>
+        </scene>
+    </scenes>
+</document>
